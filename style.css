@@ -12,7 +12,7 @@ body, html {
     position: fixed;
     z-index: 0;
     top: 0; left: 0; right: 0; bottom: 0;
-    background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
+    background: b linear-gradient to right bottom, #161c12, #364538, #577266, #7aa39a, #9fd6d5);
     animation: gradientBG 10s ease infinite;
 }
 @keyframes gradientBG {
