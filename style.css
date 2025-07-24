@@ -8,6 +8,7 @@ body, html {
     position: relative;
     z-index: 1;
 }
+
 .background {
     position: fixed;
     z-index: 0;
@@ -15,11 +16,13 @@ body, html {
     background: linear-gradient(120deg, #6a11cb 0%, #2575fc 100%);
     animation: gradientBG 10s ease infinite;
 }
+
 @keyframes gradientBG {
     0% { background-position: 0% 50%; }
     50% { background-position: 100% 50%; }
     100% { background-position: 0% 50%; }
 }
+
 nav {
     background: rgba(38, 42, 47, 0.9);
     color: #fff;
@@ -30,6 +33,7 @@ nav {
     position: relative;
     z-index: 2;
 }
+
 nav .logo {
     display: flex;
     align-items: center;
@@ -45,6 +49,7 @@ nav .logo {
     object-fit: cover;
     border: 2px solid #fff;
 }
+
 nav ul {
     list-style: none; margin: 0; padding: 0;
     display: flex;
@@ -62,6 +67,7 @@ nav ul li a:hover, .resume-btn:hover { color: #ffcf40; }
     color: #fff; font-size: 1.4em; margin-left: 15px; transition: color .2s;
 }
 .socials a:hover { color: #ee4266; }
+
 .hero {
     text-align: center;
     padding: 5em 1em 2em 1em;
@@ -92,6 +98,7 @@ nav ul li a:hover, .resume-btn:hover { color: #ffcf40; }
     transition: background .3s;
 }
 .cta:hover { background: linear-gradient(90deg, #247aff, #ff684b); }
+
 section {
     padding: 3em 1em;
     max-width: 900px;
