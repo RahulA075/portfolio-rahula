@@ -1,0 +1,108 @@
+body {
+    font-family: 'Segoe UI', Arial, sans-serif;
+    margin: 0;
+    background: #f5f7fa;
+    color: #222;
+}
+nav {
+    background: #262A2F;
+    color: #fff;
+    padding: 0.5em 1.5em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .logo { font-size: 1.5em; font-weight: bold; }
+nav ul {
+    list-style: none;
+    margin: 0; padding: 0;
+    display: flex;
+}
+nav ul li { margin-left: 1.5em; }
+nav ul li a { color: #fff; text-decoration: none; }
+.hero {
+    text-align: center;
+    padding: 4em 1em 2em 1em;
+    background: #38495a;
+    color: #fff;
+}
+.cta {
+    background: #ff684b;
+    color: #fff;
+    padding: 0.7em 1.5em;
+    border-radius: 2em;
+    display: inline-block;
+    margin-top: 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+section {
+    padding: 3em 1em;
+    max-width: 900px;
+    margin: auto;
+}
+h2 { color: #38495a; }
+.skills-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+}
+.skills-list li {
+    background: #e0e4ea;
+    padding: 0.5em 1em;
+    border-radius: 1em;
+    margin-bottom: 0.5em;
+}
+.projects-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+.project {
+    background: #fff;
+    padding: 1em;
+    border-radius: 1em;
+    box-shadow: 0 0 10px #dbe4ee88;
+    flex: 1 1 300px;
+    min-width: 240px;
+}
+.project h3 { margin-top: 0; }
+.project a {
+    text-decoration: none;
+    color: #ff684b;
+    margin-right: 0.5em;
+}
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 0.7em;
+    max-width: 400px;
+    margin: auto;
+}
+input, textarea {
+    padding: 0.7em;
+    border: 1px solid #ccc;
+    border-radius: 0.5em;
+    font-size: 1em;
+}
+button {
+    background: #38495a;
+    color: #fff;
+    border: none;
+    border-radius: 2em;
+    padding: 0.7em 1em;
+    font-size: 1em;
+    cursor: pointer;
+}
+footer {
+    background: #262A2F;
+    color: #fff;
+    text-align: center;
+    padding: 1em;
+    margin-top: 2em;
+}
+
+@media (max-width: 700px) {
+    .projects-list { flex-direction: column; }
+    nav ul { flex-direction: column; gap: 1em; }
+}
