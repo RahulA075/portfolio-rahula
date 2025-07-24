@@ -3,30 +3,47 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rahul A | Full Stack Developer</title>
+    <title>Rahul A| Full Stack Developer</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
 </head>
 <body>
+    <div class="background"></div>
     <nav>
-        <div class="logo">Rahul A</div>
+        <div class="logo"><img src="assets/profile.jpg" alt="Profile Photo" class="nav-profile">Your Name</div>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#skills">Skills</a></li>
             <li><a href="#projects">Projects</a></li>
             <li><a href="#contact">Contact</a></li>
+            <li>
+                <a href="assets/resume.pdf" download target="_blank" class="resume-btn">
+                    <i class="fa-solid fa-file-arrow-down"></i> Resume
+                </a>
+            </li>
         </ul>
+        <div class="socials">
+            <a href="https://linkedin.com/in/yourprofile" target="_blank" title="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://github.com/yourprofile" target="_blank" title="GitHub"><i class="fa-brands fa-github"></i></a>
+            <a href="https://instagram.com/yourprofile" target="_blank" title="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </nav>
+
     <section class="hero">
-        <h1>Hello, I'm Rahul <A></A></h1>
-        <p>Full Stack Developer</p>
+        <img src="assets/profile.jpg" alt="Profile Photo" class="hero-photo">
+        <h1>Hello, I'm <span>Rahul A</span></h1>
+        <p>Full Stack Developer | MERN, Python, Cloud</p>
         <a class="cta" href="#projects">View My Work</a>
     </section>
+
     <section id="about">
         <h2>About Me</h2>
         <p>
-            I am a passionate full stack developer with experience in building web applications using technologies like JavaScript, Node.js, React, Python, and more.
+            Experienced full stack developer skilled in building scalable web apps using JavaScript, React, Node.js, Python, and cloud infrastructure. Passionate about crafting modern, user-centric digital experiences.
         </p>
     </section>
+
     <section id="skills">
         <h2>Skills</h2>
         <ul class="skills-list">
@@ -36,38 +53,45 @@
             <li>Express</li>
             <li>MongoDB</li>
             <li>Python</li>
-            <li>CSS / Sass</li>
-            <li>HTML5</li>
+            <li>AWS / GCP</li>
+            <li>Docker</li>
+            <li>TypeScript</li>
+            <li>HTML5 & CSS3</li>
         </ul>
     </section>
+
     <section id="projects">
         <h2>Projects</h2>
         <div class="projects-list">
             <div class="project">
-                <h3>Project One</h3>
-                <p>Description of your project, technologies used, and features.</p>
+                <h3>Real-Time Chat App</h3>
+                <p>MERN Stack | Socket.io | Firebase Auth. Live chat with user authentication and media sharing.</p>
                 <a href="#" target="_blank">Live Demo</a>
                 <a href="#" target="_blank">Source Code</a>
             </div>
             <div class="project">
-                <h3>Project Two</h3>
-                <p>Description of another project, technologies, and highlights.</p>
+                <h3>Portfolio Generator</h3>
+                <p>React, Node.js. Generates PDF portfolios on the fly. Fast & responsive web app.</p>
                 <a href="#" target="_blank">Live Demo</a>
                 <a href="#" target="_blank">Source Code</a>
             </div>
+            <!-- Add more projects as needed -->
         </div>
     </section>
+
     <section id="contact">
         <h2>Contact</h2>
         <form id="contact-form">
-            <input type="text" placeholder="Rahul A" required/>
-            <input type="email" placeholder="Email: rahularu2005@gmail.com" required/>
-           
+            <input type="text" placeholder="Your Name" required/>
+            <input type="email" placeholder="Your Email" required/>
+            <textarea placeholder="Message" required></textarea>
+            <button type="submit"><i class="fa-solid fa-paper-plane"></i> Send</button>
         </form>
         <div id="form-status"></div>
     </section>
     <footer>
-        &copy; 2025 Rahul A. All rights reserved.
+        &copy; 2025 Rahul A. All rights reserved.<br>
+        Let's connect!
     </footer>
     <script src="script.js"></script>
 </body>
